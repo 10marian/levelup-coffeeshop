@@ -15,12 +15,22 @@
                 <i class="fas fa-mug-hot"></i>
                 LevelUp Coffee
             </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
@@ -221,6 +231,46 @@
                 </div>
             </div>
         </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Best espresso in town. Cozy vibe and fast Wi‑Fi. Perfect work spot!</p>
+                    <span class="author">— Alex R.</span>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <p>Love the gaming corner. Latte art is always on point.</p>
+                    <span class="author">— Priya S.</span>
+                </div>
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>Friendly staff, fresh pastries, and great music. Highly recommend!</p>
+                    <span class="author">— Marco D.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <div class="newsletter-inner">
+                <h2>Get 10% off your first order</h2>
+                <p>Join our newsletter for specials, events, and new menu items.</p>
+                <form class="newsletter-form" id="newsletterForm" novalidate>
+                    <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+                <p class="newsletter-feedback" id="newsletterFeedback" aria-live="polite"></p>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -239,6 +289,8 @@
             <p>&copy; 2024 LevelUp Coffee. All rights reserved.</p>
         </div>
     </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>

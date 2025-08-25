@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - LevelUp Coffee</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-mug-hot"></i>
+                LevelUp Coffee
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="locations.html" class="active">Locations</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" style="padding: 8rem 5% 2rem; text-align:center; background:#f9f9f9;">
+            <h1>Our Locations</h1>
+            <p>Find a LevelUp Coffee near you</p>
+        </section>
+
+        <section class="locations" style="padding: 2rem 5% 5rem;">
+            <div class="locations-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:1.5rem; max-width:1200px; margin:0 auto;">
+                <div class="location-card" style="background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+                    <div class="map" style="height:200px; background:url('https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png') center/contain no-repeat, #e8e8e8;"></div>
+                    <div class="location-info" style="padding:1.25rem;">
+                        <h3>Midtown, New York</h3>
+                        <p>123 Coffee Street, New York, NY 10001</p>
+                        <p><strong>Hours:</strong> 7am - 10pm (Mon-Fri), 8am - 11pm (Sat-Sun)</p>
+                        <a class="btn primary-btn" href="https://maps.google.com/?q=123+Coffee+Street+NY" target="_blank" rel="noopener">Get Directions</a>
+                    </div>
+                </div>
+                <div class="location-card" style="background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+                    <div class="map" style="height:200px; background:url('https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png') center/contain no-repeat, #e8e8e8;"></div>
+                    <div class="location-info" style="padding:1.25rem;">
+                        <h3>Brooklyn, New York</h3>
+                        <p>987 Brew Ave, Brooklyn, NY 11201</p>
+                        <p><strong>Hours:</strong> 7am - 10pm (Mon-Fri), 8am - 11pm (Sat-Sun)</p>
+                        <a class="btn primary-btn" href="https://maps.google.com/?q=987+Brew+Ave+Brooklyn+NY" target="_blank" rel="noopener">Get Directions</a>
+                    </div>
+                </div>
+                <div class="location-card" style="background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+                    <div class="map" style="height:200px; background:url('https://maps.gstatic.com/tactile/basepage/pegman_sherlock.png') center/contain no-repeat, #e8e8e8;"></div>
+                    <div class="location-info" style="padding:1.25rem;">
+                        <h3>Queens, New York</h3>
+                        <p>456 Steam Blvd, Queens, NY 11101</p>
+                        <p><strong>Hours:</strong> 7am - 10pm (Mon-Fri), 8am - 11pm (Sat-Sun)</p>
+                        <a class="btn primary-btn" href="https://maps.google.com/?q=456+Steam+Blvd+Queens+NY" target="_blank" rel="noopener">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>LevelUp Coffee</h3>
+                <p>Level up your coffee experience</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LevelUp Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
